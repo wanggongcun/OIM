@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的位置信息"
+            android:textSize="20dip"
+            android:layout_margin="10dip"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/tv_location">
+	        <Button 
+	            android:id="@+id/bt_back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="返回"
+            	android:textSize="20dip"
+	            android:layout_weight="1"
+	            
+	            />
+	        <Button 
+	            android:id="@+id/bt_send"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="发送"
+            	android:textSize="20dip"
+	            android:layout_weight="1"
+	            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

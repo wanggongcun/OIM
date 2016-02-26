@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="4dip"
+        android:id="@+id/toplayout">
+       	<ImageButton 
+	   	    android:id="@+id/ibt_camera"
+	   	    android:layout_width="40dip"
+	   	    android:layout_height="40dip"
+	   	    android:background="@drawable/ditu_64"
+	   	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_marginRight="5dip"/>
+       	<ImageButton 
+	   	    android:id="@+id/ibt_add"
+	   	    android:layout_width="40dip"
+	   	    android:layout_height="40dip"
+	   	    android:background="@drawable/ic_person_add_blue_48dp"
+	   	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentLeft="true"
+	   	    android:layout_marginLeft="5dip"/>
+       	<TextView 
+       	    android:id="@+id/tv_unreadconstactnum"
+       	    android:layout_width="10dip"
+       	    android:layout_height="10dip"
+       	    android:layout_marginLeft="40dip"
+       	    android:background="@drawable/border_round"
+       	    android:gravity="center"/>
+
+       	<TextView
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_centerVertical="true"
+       	    android:textSize="24dip"
+       	    android:textColor="#34AADC"
+       	    android:text="@string/app_name" />
+
+    </RelativeLayout>
+    <View
+	        android:layout_below="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:id="@+id/view"
+            android:background="@color/top_line" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etlayout"
+        android:background="#e6e6e6"
+        android:padding="5dip"
+        android:layout_below="@+id/view">
+    <com.time.oim.view.clearEditText 
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="5dip"
+        android:background="@drawable/round_edittext"
+        android:hint="搜索"
+        android:textColorHint="#e6e6e6"
+       />
+    </RelativeLayout>
+     
+   
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvlayout"
+        android:layout_below="@+id/etlayout">
+
+        <com.time.oim.view.SlideListView
+	        android:id="@+id/fri_listview"
+	        android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/sideBar"
+			android:fastScrollEnabled="false"
+			android:scrollbars="none"
+			android:listSelector="#00000000"
+			android:paddingLeft="20dip"
+			android:paddingRight="5dip"
+	        />
+         <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/show_head_toast_bg"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip" 
+            android:visibility="invisible"/>
+		<com.time.oim.view.SideBar 
+		    android:id="@+id/sideBar"
+		    android:layout_width="20dip"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentRight="true"
+			/>
+        
+    </RelativeLayout>
+   
+    
+
+</RelativeLayout>

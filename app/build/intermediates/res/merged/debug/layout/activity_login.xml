@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+     <SurfaceView   
+	        android:id="@+id/surfaceView"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="match_parent"  
+	        />
+	<ScrollView      
+	    android:layout_width="fill_parent"    
+	    android:layout_height="fill_parent"
+	    android:background="#F5F0F01E"
+	    android:scrollbars="vertical"    
+	    android:fadingEdge="vertical"> 
+	<RelativeLayout
+	    android:id="@+id/rl_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#F5F0F01E"
+	    android:layout_alignParentBottom="true"
+	    android:padding="2dip" >
+
+	    <ImageView
+	        android:id="@+id/iv_logo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/toplayout"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginLeft="80dip"
+	        android:layout_marginRight="80dip"
+	        android:layout_marginTop="50dip"
+	        android:layout_marginBottom="20dip"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/ic_logo" />
+	
+	    <LinearLayout
+	        android:id="@+id/ll_account"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+        	android:layout_below="@+id/iv_logo"
+	        android:orientation="vertical"
+	        android:padding="15dip" >
+
+	        <EditText
+	            android:id="@+id/username"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="1dip"
+	            android:background="@drawable/round_edittext"
+	            android:hint="用户名"
+	            android:textColorHint="@color/background_gray"
+	            android:padding="10dip"
+	            android:textSize="20dip" />
+
+	        <EditText
+	            android:id="@+id/password"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/round_edittext"
+	            android:hint="密码"
+	            android:inputType="textPassword"
+	            android:textColorHint="@color/background_gray"
+	            android:padding="10dip"
+	            android:textSize="20dip" />
+	    </LinearLayout>
+
+	    <Button
+	        android:id="@+id/login"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ll_account"
+	        android:layout_marginLeft="15dip"
+	        android:layout_marginRight="15dip"
+	        android:layout_marginTop="40dip"
+            android:background="@drawable/round_edittext"
+            android:textStyle="bold"
+	        android:text="@string/login_btn" />
+
+	    <TextView
+	        android:id="@+id/forgetpwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/login"
+	        android:layout_centerHorizontal="true"
+            android:textColor="@color/background_white"
+            android:textStyle="bold"
+	        android:layout_margin="5dip"
+	        android:text="忘记密码?" />
+
+	    <TextView
+	        android:id="@+id/register"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forgetpwd"
+	        android:layout_centerHorizontal="true"
+            android:textColor="@color/background_white"
+            android:textStyle="bold"
+	        android:layout_margin="30dip"
+	        android:text="注册账户"
+	        android:textSize="20dip" />
+	    
+
+	</RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

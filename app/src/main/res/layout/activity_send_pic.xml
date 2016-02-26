@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:id="@+id/toplayout">
+       	
+       	<ImageButton 
+	   	    android:id="@+id/ibt_back"
+	   	    android:layout_width="40dip"
+	   	    android:layout_height="40dip"
+	   	    android:background="@drawable/ic_keyboard_arrow_left_black_48dp"
+	   	    android:layout_alignParentLeft="true"/>
+       	
+       	<TextView
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_centerVertical="true"
+       	    android:textSize="24dip"
+       	    android:textColor="@color/button_blue"
+       	    android:text="选择好友" />
+       	<TextView
+            android:id="@+id/tv_select_all"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+	        android:layout_alignParentRight="true"
+       	    android:layout_centerVertical="true"
+	        android:textSize="18dip"
+       	    android:textColor="@color/button_blue"
+            android:text="全选"/>
+
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:id="@+id/view"
+        android:layout_below="@+id/toplayout"
+        android:background="@color/top_line"/>
+    
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etlayout"
+     	android:background="@color/background_gray"
+        android:padding="5dip"
+        android:layout_below="@+id/view">
+    <com.time.oim.view.clearEditText 
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="5dip"
+        android:background="@drawable/noborder_edittext"
+        android:hint="搜索"
+        android:textColorHint="@color/background_gray"
+       />
+    </RelativeLayout>
+    <ListView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/lv_contact"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_below="@+id/etlayout"
+        android:layout_above="@+id/view2"></ListView>
+	<View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/other_line"
+        android:id="@+id/view2"
+        android:layout_above="@+id/ll_bottom"/>
+     <RelativeLayout 
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+     	android:background="@color/background_gray"
+     	android:padding="5dip"
+        >
+        <TextView 
+            android:id="@+id/tv_select_num"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:gravity="center"
+       	    android:textColor="@color/button_blue"
+       	    android:background="@drawable/border_blue"
+            android:textSize="16dip"
+            android:layout_margin="5dip"
+            />
+        <EditText 
+            android:id="@+id/et_select_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_select_ok"
+            android:layout_toRightOf="@+id/tv_select_num"
+            android:layout_margin="5dip"
+	        android:layout_centerVertical="true"
+       	    android:textColor="@color/button_blue"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="18dip"
+            android:editable="false"
+            android:background="@drawable/border_blue"/>
+
+        <TextView
+            android:id="@+id/tv_select_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+       	    android:textColor="@color/button_blue"
+       	    android:padding="5dip"
+            android:textSize="18dip"
+            android:text="发送" />
+        
+    </RelativeLayout>
+</RelativeLayout>

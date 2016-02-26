@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="${packageName}.${activityClass}" >
+
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lead"/>
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20dip"
+	        android:layout_margin="10dip"
+	        android:text="进入主页记得左右滑动哦" />
+    </LinearLayout>
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_in"
+        android:layout_margin="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="开始快聊"/>
+
+</RelativeLayout>

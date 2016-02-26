@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+
+	<item android:state_pressed="true" > //选中未up时
+		<shape>		
+			<gradient 		
+				android:startColor="#ff8c00" 		
+				android:endColor="#FFFFFF"		
+				android:angle="270" /> //渐变方向		
+			<stroke 		
+				android:width="1dip" 		
+				android:color="#dcdcdc" /> //边缘颜色		
+			<corners 		
+				android:radius="2dip" /> //半径		
+			<padding 		
+				android:left="-10dip"		
+				android:top="-10dip"		
+				android:right="-10dip"		
+				android:bottom="-10dip" />		
+		</shape>		
+	</item>
+	
+	<item android:state_focused="true" > //焦点	
+		<shape>	
+			<gradient		
+				android:startColor="#ffc2b7"		
+				android:endColor="#ffc2b7"		
+				android:angle="270" />		
+			<stroke		
+				android:width="2dip"		
+				android:color="#dcdcdc" />		
+			<corners		
+				android:radius="2dip" />		
+			<padding		
+				android:left="-10dip"		
+				android:top="-10dip"		
+				android:right="-10dip"		
+				android:bottom="-10dip" />		
+		</shape>	
+	</item>	
+	<item> //无焦点	
+		<shape>		
+			<gradient		
+				android:startColor="#ff9d77"		
+				android:endColor="#ff9d77"		
+				android:angle="270" />		
+			<stroke		
+				android:width="2dip"		
+				android:color="#fad3cf" />
+			<corners		
+				android:radius="2dip" />		
+			<padding		
+				android:left="-10dip"		
+				android:top="-10dip"		
+				android:right="-10dip"		
+				android:bottom="-10dip" />		
+		</shape>	
+	</item>
+
+</selector>

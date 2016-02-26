@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+   	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dip"
+        android:id="@+id/toplayout">
+       	
+       	<TextView 
+       	    android:id="@+id/tv_cancle"
+       	    android:layout_height="wrap_content"
+       	    android:layout_width="wrap_content"
+       	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentLeft="true"
+       	    android:textSize="24dip"
+       	    android:textColor="#34AADC"
+       	    android:text="取消"/>
+       	
+       	<TextView 
+       	    android:id="@+id/tv_ok"
+       	    android:layout_height="wrap_content"
+       	    android:layout_width="wrap_content"
+       	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentRight="true"
+       	    android:textSize="24dip"
+       	    android:textColor="#34AADC"
+       	    android:text="确认"/>
+       
+    </RelativeLayout>
+	 <View
+	        android:layout_below="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:id="@+id/view"
+            android:background="@color/top_line" />
+   	<EditText 
+   	    android:id="@+id/et_shuoshuo"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:background="@drawable/border_none"
+   	    android:hint="说点什么吧。。。"
+   	    android:lines="2"
+   	    />
+   	<FrameLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp" >
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_picparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/border_rectangle"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加图片"
+                android:textColor="#b3b3b3" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/camera"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

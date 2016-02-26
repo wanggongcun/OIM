@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+     <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+     <LinearLayout 
+         android:id="@+id/ll_top"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+         android:orientation="horizontal">
+          <ImageButton
+             android:id="@+id/bt_back"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+	         android:layout_marginTop="10dip"
+             android:src="@drawable/back_36_z"
+             />
+	     <com.time.oim.view.clearEditText 
+	         android:id="@+id/et_search_poi"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="10dip"
+	         android:layout_marginLeft="10dip"
+	         android:layout_marginRight="10dip"
+	         android:padding="10dip"
+	         android:background="@drawable/rect_edittext"
+	         android:hint="搜索地点"
+	         android:text="kfc"/>
+	</LinearLayout>
+     <LinearLayout 
+         android:id="@+id/ll_menu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/ll_top"
+         android:orientation="vertical"
+         android:gravity="center_horizontal">
+         <Button 
+             android:id="@+id/bt_saveScreen"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="截图"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             android:drawableTop="@drawable/camera_36"
+             />
+         
+         <Button 
+             android:id="@+id/bt_draw"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="开始"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             android:drawableTop="@drawable/ic_create_black_36dp"
+             />
+         
+         <Button 
+             android:id="@+id/bt_find"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="附近"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             android:drawableTop="@drawable/nearby"
+             android:visibility="gone"
+             />
+         
+         <Button 
+             android:id="@+id/bt_send"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="发送"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             android:drawableTop="@drawable/complete_36"
+             android:visibility="gone"
+             />
+         
+         <Button 
+             android:id="@+id/bt_clear"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="清空"
+             android:drawableTop="@drawable/ic_reply_all_black_36dp"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             />
+         
+         <Button 
+             android:id="@+id/bt_poi"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="我的"
+             android:drawableTop="@drawable/qizhi_hong_64"
+             android:layout_marginTop="10dip"
+             android:textSize="16dip"
+             android:visibility="gone"
+             />
+     </LinearLayout>
+     
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dip"
+        android:id="@+id/toplayout">
+       	<ImageButton 
+	   	    android:id="@+id/ibt_camera"
+	   	    android:layout_width="36dip"
+	   	    android:layout_height="36dip"
+	   	    android:background="@drawable/ic_local_see_black_24dp"
+	   	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentLeft="true"/>
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="设置"
+           android:textSize="30sp"
+           android:layout_centerInParent="true"/>
+    </RelativeLayout>
+     <View
+	        android:layout_below="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#b2b2b2"
+            android:layout_marginBottom="10dip" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toplayout"
+        android:padding="10dip"
+        >
+        
+        <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            >
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="账号与安全 "/>
+            <TextView 
+	            android:id="@+id/tv_accountsafe"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:padding="10dip"
+	            android:text=">"/>
+        </RelativeLayout>
+        <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="2dip"  
+	        android:background="#FF909090" 
+	        android:layout_marginBottom="20dip"/>
+        
+       
+        
+        <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rectangle"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            >
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="消息通知"/>
+           
+           <Switch 
+                android:id="@+id/sw_notify"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+         <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" 
+	        android:layout_marginBottom="20dip"/>
+          <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            >
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="隐私保护"/>
+           <TextView 
+	            android:id="@+id/tv_privacy"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+		        android:padding="10dip"
+	            android:text=">"/>
+        </RelativeLayout>
+         <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" 
+	        android:layout_marginBottom="20dip"/>
+        
+         <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            >
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="检查更新"/>
+           <TextView 
+	            android:id="@+id/tv_update"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+		        android:padding="10dip"
+	            android:text=">"/>
+        </RelativeLayout>
+         <View  
+	        android:layout_width="fill_parent"  
+	        android:layout_height="1dip"  
+	        android:background="#FF909090" 
+	        android:layout_marginBottom="20dip"/>
+        <Button 
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登录"/>
+    </LinearLayout>
+</RelativeLayout>

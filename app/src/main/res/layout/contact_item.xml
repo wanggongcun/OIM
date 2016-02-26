@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+     >
+    <LinearLayout 
+        android:id="@+id/ll_content"
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true">
+        <TextView 
+        android:id="@+id/tv_contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="20dip"/>
+    <TextView 
+        android:id="@+id/tv_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话"
+        android:textColor="#949494"
+        android:textSize="16dip"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/bt_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_blue"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:padding="8dip"
+        android:text="邀请"/>
+    
+
+</RelativeLayout>

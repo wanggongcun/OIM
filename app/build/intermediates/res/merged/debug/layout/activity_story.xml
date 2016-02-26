@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:id="@+id/toplayout">
+       	
+	    <TextView
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_centerVertical="true"
+       	    android:textSize="24dip"
+       	    android:textColor="#34AADC"
+       	    android:text="故事圈" />
+	    
+       	<ImageButton 
+	   	    android:id="@+id/ibt_add"
+	   	    android:layout_width="36dip"
+	   	    android:layout_height="36dip"
+	   	    android:background="@drawable/add"
+	   	    android:layout_alignParentTop="true"
+	   	    android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View
+	        android:layout_below="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:id="@+id/view"
+            android:background="@color/top_line" />
+	<LinearLayout 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:layout_below="@+id/toplayout">
+	    <com.time.oim.view.RefreshListView
+	    android:id="@+id/lv_shuoshuo"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/toplayout"
+	    android:scrollbars="vertical"
+	    >
+	</com.time.oim.view.RefreshListView>
+	</LinearLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+     <ListView 
+         android:id="@+id/lv_add_name"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="15dip"
+         android:layout_marginRight="15dip"
+    	 android:scrollbars="none"
+         >
+     </ListView>
+     <TextView 
+         android:id="@+id/tv_none"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:text=""
+         android:textSize="24dip"
+         android:gravity="center"
+         android:visibility="gone"/>
+</RelativeLayout>

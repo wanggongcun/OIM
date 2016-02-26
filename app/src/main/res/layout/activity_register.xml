@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <SurfaceView   
+	        android:id="@+id/surfaceView"  
+	        android:layout_width="match_parent"  
+	        android:layout_height="match_parent"  
+	        /> 
+    <RelativeLayout 
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:background="#F5F0F01E"
+    	android:padding="20dip"
+        >
+	    <LinearLayout 
+	        android:id="@+id/ll_step1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="马上开始"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		     
+		    <EditText 
+		        android:id="@+id/et_username"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:hint="用户名"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        />
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="16dip"
+		        android:layout_marginTop="10dip"
+		        android:text="可以使用6-20个字母、数字、下划线和减号，必须以字母开头的自定义用户名." />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="下一步" />
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="设置密码"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		     
+		    <EditText 
+		        android:id="@+id/et_password"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="textPassword"
+		        android:background="@drawable/round_edittext"
+		        android:hint="密码"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        />
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:textSize="16dip"
+		        android:text="请输入6-16个数字、字母和符号 （如 ！ 和  &amp; ） 混合而成的密码。" />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="下一步"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step2_5"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="你的姓名?"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		   <LinearLayout 
+	        android:id="@+id/ll_step2_5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+		    <EditText 
+		        android:id="@+id/et_firstname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:hint="姓"
+		        android:layout_weight="1"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        android:layout_marginRight="10dip"
+		        />
+		    <EditText 
+		        android:id="@+id/et_secondname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:hint="名"
+		        android:layout_weight="1"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        />
+		    </LinearLayout>
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:textSize="16dip"
+		        android:text="使用真实姓名可以让朋友更轻松找到你。" />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next2_5"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="下一步"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step3"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="电子邮箱"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		     
+		    <EditText 
+		        android:id="@+id/et_email"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="textEmailAddress"
+		        android:background="@drawable/round_edittext"
+		        android:hint="电子邮箱"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        />
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:textSize="16dip"
+		        android:text="需要找回密码时，你可能使用此邮件地址。" />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next3"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="下一步"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step4"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="你的手机号码"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		     
+		    <EditText 
+		        android:id="@+id/et_phone"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="textPhonetic"
+		        android:background="@drawable/round_edittext"
+		        android:hint="手机号码"
+		        android:textSize="24dip"
+		        android:padding="10dip"
+		        />
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:textSize="16dip"
+		        android:text="输入你的手机号，以便朋友可以快的找到你。" />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next4"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="下一步"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step5"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	         <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="你的生日？"
+		        android:textSize="30dip"
+		        android:layout_margin="10dip" />
+		     
+		    
+		    <DatePicker 
+		        android:id="@+id/dp_birthday"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:calendarViewShown="false"
+		        android:padding="10dip"/>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dip"
+		        android:textSize="16dip"
+		        android:text="输入你的生日信息，以便我们能给你传达及时的祝福." />
+		    <Button 
+		        android:layout_margin="50dip"
+		        android:id="@+id/bt_next5"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/round_edittext"
+		        android:text="完成"/>
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/ll_step6"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:visibility="gone"
+	        >
+	        <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="20dip"
+		        android:layout_marginRight="20dip"
+		        android:textSize="24dip"
+		        android:text="正在创建个人账户..." />
+	    </LinearLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/background_white"/>
+        <TextView 
+            android:id="@+id/tv_tologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="已经有账户了?"
+            android:textSize="16dip"
+            android:padding="15dip"/>
+    </RelativeLayout>
+
+</RelativeLayout>

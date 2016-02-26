@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <com.time.oim.view.MyViewPager
+	        android:id="@+id/page2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        >
+	      
+         <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/camera"/>  
+	     <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#CC999999"/>  
+	      <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#FFFFFFFF"/>  
+	     <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#CC990000"/>  
+	     <ImageView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#CC000099"/>  
+    	</com.time.oim.view.MyViewPager>
+
+</FrameLayout>

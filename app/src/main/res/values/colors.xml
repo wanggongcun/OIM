@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="top_line">#c8c8c8</color>
+    <color name="other_line">#c8c8cd</color>
+    <color name="background_gray">#e6e6e6</color>
+    <color name="background_white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="button_blue">#34aadc</color>
+</resources>
